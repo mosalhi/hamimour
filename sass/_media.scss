@@ -1,0 +1,251 @@
+@import "compass";
+
+/*==========  Desktop First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+
+    .slogan {
+        p {
+            font-size: 16px;
+        }
+        .arab {
+            font-size: 22px;
+        }
+    }
+    .nav-bar {
+        ul {
+            li {
+                a {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+    .top-line{
+        .email-top{
+            font-size: 12px !important;
+            margin-top: 15px;
+        }
+    }
+    .about-bloc {
+        .saveur-img {
+            margin-top: 20px;
+        }
+        .saveur {
+            p {
+                font-size: 18px;
+                strong {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .button {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 15px;
+        }
+    }
+} //1200
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    .logo {
+        width: 50%;
+        padding: 0;
+        img {
+            //width: 100%;
+        }
+    }
+    .slogan {
+        display: none;
+    }
+    .top-contact {
+        width: 50%;
+    }
+    .nav-bar {
+        ul {
+            li.big {
+                display: none;
+            }
+            li.little {
+                display: inline-block;
+            }
+        }
+    }
+    .about-bloc {
+        padding-bottom: 100px;
+        .saveur-img {
+            margin-top: 55px;
+        }
+        .saveur {
+            p {
+                font-size: 16px;
+                strong {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+
+            }
+        }
+
+    }
+} //992
+@media only screen and (max-width: 768px) {
+    .logo-nav {
+        .logo {
+            width: 100px;
+            padding: 0;
+            float: left;
+        }
+        .top-contact {
+            float: right;
+            width: auto;
+        }
+        .slogan {
+            display: none;
+        }
+    }
+    .saveur-img {
+        text-align: center;
+        img {
+            width: 45%!important;
+            margin-top: 0px;
+        }
+    }
+    .calendrier {
+        h2 {
+            font-size: 16px;
+        }
+        table {
+            td {
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+    .depot-bloc {
+         display: none;
+    }
+    .contact-bloc{
+		padding-right: 30px;
+		padding-left: 30px;
+    	.caro{
+		background: lighten(green,65%)!important;
+	}
+    }
+    .profi_form{
+    	width: 98%;
+    	margin: 0 auto;
+    }
+} //768
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 620px) {
+	.logo {
+        img{
+        	width: 100px;
+        	height: 100px;
+        	margin-top: 20px;
+        }
+    }
+
+    .top-contact {
+
+	h4{
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+
+    }
+    .nav-bar {
+        ul {
+            li{
+            	margin-right: 3px;
+                padding: 0;
+            	a{
+            		font-size: 12px;
+                    padding-left: 7px;
+                    padding-right: 7px;
+            	}
+            }
+        }
+    }
+.profi_form{
+    	width: 98%;
+    	margin: 0 auto;
+    }
+
+    .carousel-caption{
+        margin-top: -100px!important;
+        h1{
+            font-size: 30px!important;
+        }
+        h3{
+            font-size: 22px!important;
+        }
+        button{
+            font-size: 14px;
+            padding: 10px 20px!important;
+            margin-left: -20px;
+        }
+    }
+    #slider-next{
+        display: none;
+    }
+    #slider-prev{
+        display: none;
+    }
+}//620
+
+@media only screen and (max-width: 480px) {
+
+}//480
+
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+//320
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+    /**/
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    /**/
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    /**/
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
