@@ -27,11 +27,35 @@ slider.bxSlider({
 		  autoStart:true,
 		  speed:1000
   });
+$('#myForm').validator({
+    feedback: {
+      success: 'fa fa-check-circle',
+      error: 'fa fa-times-circle'
+    }
+});
 
 
-
-
-
+$("form").submit(function(e) {
+    var ths = $(this);
+    if (e) {
+        e.preventDefault();
+    }
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()
+    }).done(function() {
+        alert("Спасибо за взятку!");
+        setTimeout(function() {
+        //ths.trigger("reset");
+        window.location.reload();
+        // $("#section-register .has-success .glyphicon").addClass("hidden");
+        // $(".select2-selection__rendered").addClass("hidden");
+        //$("form")[0].reset();
+        }, 500);
+    });
+    return false;
+});
 
 
 });/*ready*/

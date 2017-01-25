@@ -70,24 +70,23 @@
   font-style: normal;
   font-weight: normal;
 }
-.gal {
+section#gallery .gal {
   background: #E5E5EE;
   background: -webkit-gradient(linear, left top, left bottom, from(#ccde09), to(#ffffff));
   background: -webkit-linear-gradient(#ccde09, #ffffff);
   background: linear-gradient(#ccde09, #ffffff);
 }
-
-.gallery {
+section#gallery .gallery {
   margin-bottom: 30px;
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.gallery .caro {
+section#gallery .gallery .caro {
   background: #8080ff;
   background: #010300;
 }
-.gallery h2 {
+section#gallery .gallery h2 {
   text-align: center;
   color: blue;
   font-style: italic;
@@ -95,13 +94,13 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.gallery .img-item {
+section#gallery .gallery .img-item {
   border: 2px solid transparent;
   height: 120px;
   overflow: hidden;
   position: relative;
 }
-.gallery .img-item h3 {
+section#gallery .gallery .img-item h3 {
   position: absolute;
   text-transform: capitalize;
   top: -18%;
@@ -109,7 +108,7 @@
   font-size: 14px;
   font-style: italic;
 }
-.gallery .img-item:hover h3 {
+section#gallery .gallery .img-item:hover h3 {
   position: absolute;
   left: 2%;
   top: -18%;
@@ -117,13 +116,13 @@
   -webkit-transition: 1s ease-out;
   transition: 1s ease-out;
 }
-.gallery .img-item img {
+section#gallery .gallery .img-item img {
   width: 100%;
   height: 100%;
   position: absolute;
   left: -0%;
 }
-.gallery .img-item img:hover {
+section#gallery .gallery .img-item img:hover {
   width: 115%;
   height: 115%;
   position: absolute;
@@ -132,21 +131,21 @@
   transition: 1s ease-out;
 }
 
-.calendrier-bloc {
+/*section#gallery*/
+section#calendrier .calendrier-bloc {
   background: -webkit-gradient(linear, left top, left bottom, from(#008000), to(#cdffcd));
   background: -webkit-linear-gradient(#008000, #cdffcd);
   background: linear-gradient(#008000, #cdffcd);
 }
-
-.calendrier {
+section#calendrier .calendrier {
   position: relative;
   padding-top: 30px;
   padding-bottom: 40px;
 }
-.calendrier .caro {
+section#calendrier .calendrier .caro {
   background: white;
 }
-.calendrier h2 {
+section#calendrier .calendrier h2 {
   text-align: center;
   color: #fff;
   font-style: italic;
@@ -155,36 +154,36 @@
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.calendrier table {
+section#calendrier .calendrier table {
   width: 100%;
   background: #FFF;
 }
-.calendrier table .th {
+section#calendrier .calendrier table .th {
   text-align: center;
   background: #FD7508;
   color: #FFF;
 }
-.calendrier table .th td {
+section#calendrier .calendrier table .th td {
   height: 45px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.calendrier table .th td:first-child {
+section#calendrier .calendrier table .th td:first-child {
   background: #FD7508;
   text-align: center;
 }
-.calendrier table td {
+section#calendrier .calendrier table td {
   text-align: center;
   height: 60px;
 }
-.calendrier table td img {
+section#calendrier .calendrier table td img {
   width: 80%;
   text-align: center;
 }
-.calendrier table td img.vinograd {
+section#calendrier .calendrier table td img.vinograd {
   width: 50%;
 }
-.calendrier table td:first-child {
+section#calendrier .calendrier table td:first-child {
   padding-right: 10px;
   font-size: 18px;
   font-style: italic;
@@ -195,84 +194,86 @@
   background: #94B132;
 }
 
-.depot-bloc {
-  background: white;
+/*section#calendrier*/
+section#depot-froid .depot-bloc {
+  background: -webkit-gradient(linear, left top, left bottom, from(#94ddd2), to(#ffffff));
+  background: -webkit-linear-gradient(#94ddd2, #ffffff);
+  background: linear-gradient(#94ddd2, #ffffff);
   padding-top: 30px;
   position: relative;
   padding-bottom: 40px;
 }
-
-.depot .caro {
+section#depot-froid .depot .caro {
   background: #cdffcd;
 }
-.depot h2 {
+section#depot-froid .depot h2 {
   text-align: center;
-  color: #919191;
+  color: #009a00;
   font-style: italic;
   letter-spacing: 5px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
 }
-.depot table {
+section#depot-froid .depot table {
   width: 100%;
   cursor: pointer;
   margin: 0 auto;
   margin-top: 30px;
-  text-transform: capitalize;
 }
-.depot table td {
+section#depot-froid .depot table td {
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 1px;
   padding-bottom: 1px;
+  font-weight: bold;
 }
-.depot table td:first-child {
+section#depot-froid .depot table td:first-child {
   padding: 1px;
   text-align: center;
   font-weight: bold;
 }
-.depot table td:nth-child(2) {
+section#depot-froid .depot table td:nth-child(2) {
   padding: 0;
 }
-.depot table td:nth-child(2) img {
+section#depot-froid .depot table td:nth-child(2) img {
   width: 55px;
   height: 35px;
 }
-.depot table td:nth-child(3) {
-  text-align: left;
-}
-.depot table td:last-child {
+section#depot-froid .depot table td:last-child {
   padding: 2px;
   text-align: center;
   font-weight: bold;
 }
-.depot table tr {
+section#depot-froid .depot table tr {
   font-size: 17px;
   border-bottom: 2px solid gray;
-  text-align: center;
 }
-.depot table tr:first-child {
+section#depot-froid .depot table tr:first-child {
   border-top: 2px solid gray;
 }
-.depot table tr:nth-child(odd) {
-  background: #f7f7f7;
+section#depot-froid .depot table tr:nth-child(odd) {
+  background: #6abbea;
 }
-.depot table tr:hover {
-  background: #ededed;
+section#depot-froid .depot table tr:hover {
+  background: #ceeddd;
 }
-.depot table tr.th {
-  background: #efefef;
+section#depot-froid .depot table tr.th {
+  background: #009dda;
+  color: #fff;
 }
-.depot table tr.th td {
-  padding-top: 10px;
-  padding-bottom: 10px;
+section#depot-froid .depot table tr.th td {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: bold;
-  font-size: 17px;
-  font-style: italic;
+  font-size: 16px;
+}
+section#depot-froid .depot table tr.th td:hover {
+  background: #009dda;
 }
 
-.contact-bloc {
+/*section#depot-froid*/
+section#contact-sect .contact-bloc {
   background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#ffffff));
   background: -webkit-linear-gradient(#f3f3f3, #ffffff);
   background: linear-gradient(#f3f3f3, #ffffff);
@@ -280,7 +281,7 @@
   padding-bottom: 0px;
   padding-top: 10px;
 }
-.contact-bloc h2 {
+section#contact-sect .contact-bloc h2 {
   text-align: center;
   color: #bababa;
   font-style: italic;
@@ -289,104 +290,149 @@
   margin-bottom: 15px;
   font-weight: bold;
 }
-.contact-bloc .contact .caro {
+section#contact-sect .contact-bloc .contact .caro {
   background: white;
 }
-.contact-bloc .contact .left-bloc {
+section#contact-sect .contact-bloc .contact .left-bloc {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
 }
-.contact-bloc .contact .left-bloc img {
+section#contact-sect .contact-bloc .contact .left-bloc img {
   width: 100%;
   height: 100%;
 }
-.contact-bloc .contact .right-bloc {
+section#contact-sect .contact-bloc .contact .right-bloc {
   padding-left: 10px;
   padding-right: 0;
 }
-.contact-bloc .contact .right-bloc p {
+section#contact-sect .contact-bloc .contact .right-bloc p {
   line-height: 1.1;
   font-size: 14px;
   font-weight: bold;
 }
-.contact-bloc .contact .right-bloc p span,
-.contact-bloc .contact .right-bloc p a {
+section#contact-sect .contact-bloc .contact .right-bloc p span,
+section#contact-sect .contact-bloc .contact .right-bloc p a {
   font-size: 16px;
   color: #999999;
   text-decoration: none;
 }
-.contact-bloc .contact .right-bloc p a:hover,
-.contact-bloc .contact .right-bloc p span:hover {
+section#contact-sect .contact-bloc .contact .right-bloc p a:hover,
+section#contact-sect .contact-bloc .contact .right-bloc p span:hover {
   text-decoration: none;
   color: #b3b3ff;
 }
-
-.bot-contact p {
+section#contact-sect .bot-contact p {
   font-weight: bold;
   display: block;
+  color: gray;
+  font-size: 18px;
+}
+section#contact-sect .bot-contact p:hover {
   color: #ccc;
 }
-.bot-contact p strong {
-  font-size: 16px;
+section#contact-sect .bot-contact p a {
+  color: gray;
+}
+section#contact-sect .bot-contact p a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+section#contact-sect .bot-contact p strong {
+  font-size: 18px;
   font-style: italic;
   color: #cccaaa;
 }
-
-.profi_form {
-  width: 100%;
-  text-align: center;
-  padding: 0px 15px 10px;
-  border: 3px solid #ccc;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
+section#contact-sect .right-bloc {
+  padding-top: 0;
+  padding-bottom: 30px;
 }
-.profi_form h3 {
-  text-align: center;
-  font-size: 18px;
+section#contact-sect #section-form #myForm {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+section#contact-sect #section-form #myForm h3 {
+  padding: 0;
+  margin: 0;
+}
+section#contact-sect #section-form .form-title {
+  padding: 0;
+  margin: 0;
   margin-bottom: 10px;
-  color: #ccc;
-  text-transform: uppercase;
-  font-weight: bold;
   font-style: italic;
+  font-weight: bold;
+  color: #737373;
 }
-.profi_form label {
-  font-family: "CleanvertisingLight", sans-serif;
-  margin-bottom: 0px;
-  display: block;
-  color: #ccc;
-  text-align: left;
+section#contact-sect #section-form #myForm table {
   width: 100%;
+  color: #999999;
 }
-.profi_form input {
-  margin: 0 auto;
-  border: none;
-  border: 1px solid #d9d9d9;
+section#contact-sect #section-form #myForm table span {
+  color: #ff9999;
+}
+section#contact-sect #section-form #myForm input {
+  outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: none;
-  margin-bottom: 5px;
-  width: 100%;
-  outline: none;
-  padding-left: 10px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  font-size: 18px;
 }
-.profi_form .profi_button {
-  display: block;
-  border: none;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-  background: #b3b3b3;
-  width: 80%;
-  height: 40px;
+section#contact-sect #section-form #myForm textarea {
   outline: none;
-  color: #FFF;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+section#contact-sect #section-form #myForm tr:last-child td:last-child {
+  padding: 20px 0 0;
+}
+section#contact-sect #section-form #myForm button {
+  padding: 8px 25px;
+}
+section#contact-sect #section-form #myForm button .fa {
+  margin-left: 10px;
+}
+section#contact-sect .cont {
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  background: #fafafa;
+}
+section#contact-sect .cont .cont-reg {
+  padding-left: 0;
+  padding-right: 0;
+}
+section#contact-sect .cont .cont-reg:nth-child(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+section#contact-sect .cont h4 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #000b00;
+}
+section#contact-sect .cont table {
+  margin: 0 auto;
+}
+section#contact-sect .cont table tr td:first-child {
+  text-align: right;
+  font-weight: bold;
+  color: #00008a;
+  padding-left: 20px;
+}
+section#contact-sect .cont table tr td:last-child {
+  padding-right: 20px;
+  text-align: left;
   font-weight: bold;
   font-size: 16px;
-  text-transform: uppercase;
+  color: #00008a;
 }
 
+/*section#depot-froid*/
 .copyright p {
   height: 35px;
   line-height: 35px;
@@ -424,6 +470,9 @@
 }
 
 .price-wrap {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8080), to(#3333ff));
+  background: -webkit-linear-gradient(#ff8080, #3333ff);
+  background: linear-gradient(#ff8080, #3333ff);
   text-align: center;
   padding-top: 30px;
   text-transform: capitalize;
@@ -434,7 +483,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
-  color: #ccc;
+  color: #FFF;
 }
 .price-wrap .price-list {
   position: relative;
@@ -451,15 +500,27 @@
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 18px;
+  font-weight: bold;
   text-align: center;
   text-transform: capitalize;
-  background: #f8f7e4;
+  background: #b3ece3;
 }
 .price-wrap .price-list table tr:nth-child(odd) {
+  background: #a9f7f6;
   background: #eee;
+}
+.price-wrap .price-list table tr:nth-child(odd):hover {
+  background: #cdf2ec;
+  background: #eedddd;
 }
 .price-wrap .price-list table tr:hover {
   background: #fdfcf9;
+}
+.price-wrap .price-list table tr:nth-child(even) {
+  background: #cde8f5;
+}
+.price-wrap .price-list table tr:nth-child(even):hover {
+  background: #cdf2ec;
 }
 .price-wrap .price-list table td {
   border: 1px solid gray;
@@ -575,6 +636,10 @@
   .about-bloc .saveur p strong {
     font-size: 16px;
     text-transform: uppercase;
+  }
+
+  .cont .cont-reg {
+    border: none !important;
   }
 }
 @media only screen and (max-width: 768px) {
